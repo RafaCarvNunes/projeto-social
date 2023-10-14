@@ -38,6 +38,28 @@ iframe#tela {
     top: 79px;
     left: 21px;
     width: 269px;
-    height: 475px;
+    height: 473px;
     border-radius: 4px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    /*Aqui acima poderia ser:
+    section#redes-sociais > a > img */
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;/*com essa regra as bordas vão fazer parte da caixa quando passar o mause por cima */
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-3px, -3px); /*essa regra é para movimentar para cima quando passar o mause */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623); /*essa regra é para a sobra acompanhar quando passar o mause */
+    transition: transform .3s, border .3s;
 }
